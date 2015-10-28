@@ -1,0 +1,25 @@
+//Base MP3 Player
+
+
+class MP3
+	{
+private:
+	File a;
+
+	play(File);
+
+	pause();
+
+	stop();
+
+	load();
+
+	setPlayLocation();
+
+	getVolume();
+
+	setVolume();
+public:
+	friend void MP3Player;
+
+	}

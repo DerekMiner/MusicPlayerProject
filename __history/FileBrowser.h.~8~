@@ -1,0 +1,17 @@
+#include <list>
+#include "File.h"
+
+class FileBrowser
+	{
+    std::list<file> fileList = new list<file>;
+
+	void addFile();
+
+	void removeFile();
+
+	void clearArray();
+
+
+
+
+    };

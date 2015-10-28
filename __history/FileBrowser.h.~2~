@@ -1,0 +1,16 @@
+#include <list>
+
+class FileBrowser
+	{
+    list<file> fileList = new list<file>;
+
+	void addFile();
+
+	void removeFile();
+
+	void clearArray();
+
+
+
+
+    };

@@ -1,0 +1,25 @@
+//Base MP3 Player
+
+
+class MP3
+	{
+private:
+	File a;
+
+public;
+	void play(File);
+
+	void pause();
+
+	void stop();
+
+	void load();
+
+	void setPlayLocation(int location);
+
+	int getVolume();
+
+	void setVolume(int loudness);
+
+
+	};
