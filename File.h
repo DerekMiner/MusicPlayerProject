@@ -1,9 +1,1 @@
-
-class File
-{
-public:
-	char* name;
-
-
-};
-
+//I AM ERROR
