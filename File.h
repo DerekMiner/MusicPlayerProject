@@ -1,1 +1,8 @@
-//I AM ERROR
+
+
+class File
+{
+char * FileName;
+
+
+}
