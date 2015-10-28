@@ -3,7 +3,7 @@
 
 class FileBrowser
 	{
-	std::list<File> * fileList;
+    std::list<File> * fileList = new list<File>;
 
 	void addFile();
 

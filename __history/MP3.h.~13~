@@ -8,7 +8,8 @@ private:
 	File playThisFile;
 
 public:
-	MP3();
+	MP3()
+	 :File(){}
 
 	void play(File fileToPlay);
 
