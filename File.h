@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 class File
@@ -8,3 +9,6 @@ public:
 
 };
 
+=======
+//this is a test
+>>>>>>> origin/master
