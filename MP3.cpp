@@ -1,37 +1,44 @@
 
 #include "MP3.h"
 
-	void MP3::play(File fileToPlay)
-		{
+    MP3::MP3()
+    {
+  engine = createIrrKlangDevice();
+    }
 
-        }
+	void MP3::play(/*File fileToPlay*/ char* fileName)
+    {
+        engine->play2D(fileName, true);
+    }
 
-	void MP3::pause()
-		{
+	void MP3::pause(char* fileName)
+    {
+        engine->play2D(fileName, false);
+//        engine->setIsPaused();
+    }
 
-		}
+	void MP3::stop(char* fileName)
+    {
 
-	void MP3::stop()
-		{
+    }
 
-        }
+	void MP3::load(char* fileName)
+    {
 
-	void MP3::load()
-		{
+    }
 
-        }
+	void MP3::setPlayLocation(char* fileName, int location)
+    {
 
-	void MP3::setPlayLocation(int location)
-		{
+    }
 
-        }
+	int MP3::getVolume(char* fileName)
+    {
+        int blah = 1;
+        return blah;
+    }
 
-	int MP3::getVolume()
-		{
-
-        }
-
-	void MP3::setVolume(int loudness)
-		{
-
-        }
+	void MP3::setVolume(char* fileName, int loudness)
+    {
+        int blah = loudness;
+    }

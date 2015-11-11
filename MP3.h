@@ -1,28 +1,33 @@
 //Base MP3 Player
+#ifndef MP3_H
+#define MP3_H
 
-#include "File.h"
+#include <irrKlang.h>
+//#include "File.h"
+using namespace irrklang;
 
 class MP3
-	{
-private:
-	File playThisFile;
+{
 
-public:
-	MP3();
+	private:
+//		File playThisFile;
+ISoundEngine* engine;
 
-	void play(File fileToPlay);
+	public:
+		MP3();
 
-	void pause();
+		void play(/*File fileToPlay*/char* fileName);
 
-	void stop();
+		void pause(char* fileName);
 
-	void load();
+		void stop(char* fileName);
 
-	void setPlayLocation(int location);
+		void load(char* fileName);
 
-	int getVolume();
+		void setPlayLocation(char* fileName, int location);
 
-	void setVolume(int loudness);
+		int getVolume(char* fileName);
 
-
-	};
+		void setVolume(char* fileName, int loudness);
+};
+#endif
